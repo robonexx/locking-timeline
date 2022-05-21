@@ -1,0 +1,12 @@
+.assignment-form {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(37, 22, 63, 0.425);
+    border-radius: 10px;
+}
+
+.assign-form-btn {
+    background-color: #282828;
+    border-radius: 5px;
+}

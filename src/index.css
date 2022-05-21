@@ -2,11 +2,13 @@
 
 /* variables */
 :root {
-  --heading-color: #444;
-  --text-color: #999;
-  --primary-color: #c2c2c2;
-  --highlight-color: #d13232;
-  --bg-color: #f4f4f4;
+  --heading-color: #ffc13b;
+  --text-color: #eaeaea;
+  --primary-color: #fafafa;
+  --highlight-color: #EF3E42;
+  --bg-color: #fdfdfd;
+  --bg-color-dark: #1b1b1b;
+  --btn-color: #ff6e40;
 }
 
 /* base styles */
@@ -26,22 +28,25 @@ ul {
 
 /* layout */
 .page-title {
-  font-size: 1em;
+  font-size: 2rem;
   color: var(--heading-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.56);
   display: inline-block;
+  text-transform: uppercase;
 }
 .btn {
-  background: #fff;
+  background: var(--btn-color);
   padding: 8px 12px;
   border-radius: 4px;
   color: var(--primary-color);
   cursor: pointer;
   font-size: 1em;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--heading-color);
 }
 .btn:hover {
-  color: #fff;
+  color: #282828;
   background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 /* forms */
