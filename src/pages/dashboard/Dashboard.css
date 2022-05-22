@@ -1,5 +1,6 @@
 .timeline-filter {
     margin: 30px auto;
+    
   }
   .timeline-filter nav {
     display: flex;
@@ -12,7 +13,8 @@
     margin-right: 10px;
   }
   .timeline-filter button {
-    background: transparent;
+    background: var(--heading-color);
+    padding: 0 0.25rem;
     border: 0;
     font-family: inherit;
     font-weight: bold;
@@ -27,3 +29,26 @@
   .timeline-filter button.active {
     color: var(--highlight-color);
   } 
+
+  
+  @media screen and (max-width: 768px) {
+    .timeline-filter nav {
+      display: flex;
+      padding: 0 2rem;
+      background-color: rgb(217, 217, 217);
+      border-radius: 4px;
+    }
+
+    .timeline-filter button {
+      background: var(--heading-color);
+      padding: 0 0.5rem;
+      margin-right: 0.5rem;
+      border: 0;
+      font-family: inherit;
+      font-weight: bold;
+      color: var(--bg-color-dark);
+      cursor: pointer;
+      border-right: 1px solid #e4e4e4;
+      font-size: 0.9em;
+    }
+  }

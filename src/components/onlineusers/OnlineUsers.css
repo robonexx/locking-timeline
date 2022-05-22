@@ -1,27 +1,15 @@
 .online-users {
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    bottom: 0;
     width: 200px;
+    z-index: 10;
     min-width: 200px;
+    min-height: 100vh;
     box-sizing: border-box;
     padding: 20px;
     background-color: var(--heading-color);
     color: black;
     border-left: solid 2px rgb(0, 0, 0);
-    transform: translateX(180px);
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.online-users:hover {
-    transform: translateX(0px);
-}
-
-.online-users:hover > .online-side {
-    opacity: 0;
 }
 
 .online-users h2 {
@@ -67,9 +55,34 @@
 }
 
 .online-side {
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .online-users {
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: translateX(180px);
+      z-index: 100;
+    }
+
+    
+.online-users:hover {
+    transform: translateX(0px);
+}
+
+.online-users:hover > .online-side {
+    opacity: 0;
+}
+
+.online-side {
     position: fixed;
     display: inline-block;
     align-items: center;
+    opacity: 1;
     left: 0;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -81,4 +94,6 @@
     left: 0;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+}
+
 }

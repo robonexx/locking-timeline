@@ -6,6 +6,7 @@
     box-sizing: border-box;
     position: relative;
     color: #fff;
+    transition: all 0.3s ease-in-out;
   }
   .sidebar-content {
     position: fixed;
@@ -57,4 +58,21 @@ text-shadow: 1px 1px 1px rgba(0,0,0.335);
   }
   .sidebar .links .active img {
     filter: invert(40%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      transform: translateX(-280px);
+      z-index: 100;
+    }
+
+    .sidebar:hover {
+      transform: translateX(0px);
+    }
+
   }

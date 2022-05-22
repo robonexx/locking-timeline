@@ -41,3 +41,15 @@
     color: #121212;
     background-color: #ff6e40;
   }
+
+  
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    margin: 0 auto;
+    width: 90%;
+    padding: 30px 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+}
