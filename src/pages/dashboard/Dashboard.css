@@ -1,0 +1,29 @@
+.timeline-filter {
+    margin: 30px auto;
+  }
+  .timeline-filter nav {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 4px;
+  }
+  .timeline-filter p {
+    font-size: 0.9em;
+    margin-right: 10px;
+  }
+  .timeline-filter button {
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--bg-color-dark);
+    cursor: pointer;
+    border-right: 1px solid #e4e4e4;
+    font-size: 0.9em;
+  }
+  .timeline-filter button:last-child {
+    border: 0;
+  }
+  .timeline-filter button.active {
+    color: var(--highlight-color);
+  } 

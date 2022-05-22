@@ -5,8 +5,6 @@ export const useCollection = (collection, _query, _orderBy) => {
   const [documents, setDocuments] = useState(null)
   const [error, setError] = useState(null)
 
-  // if we don't use a ref --> infinite loop in useEffect
-  // _query is an array and is "different" on every function call
   const query = useRef(_query).current
   const orderBy = useRef(_orderBy).current
 

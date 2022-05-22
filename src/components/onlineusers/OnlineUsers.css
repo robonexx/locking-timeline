@@ -1,4 +1,9 @@
 .online-users {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 200px;
     min-width: 200px;
     box-sizing: border-box;
@@ -6,6 +11,13 @@
     background-color: var(--heading-color);
     color: black;
     border-left: solid 2px rgb(0, 0, 0);
+    transform: translateX(180px);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.online-users:hover {
+    transform: translateX(0px);
 }
 
 .online-users h2 {
@@ -48,4 +60,20 @@
     background-color: lightgreen;
     margin: 1px 4px 0 0;
     box-shadow: 0px 0px 2px 1px rgb(47, 182, 43);
+}
+
+.online-side {
+    position: fixed;
+    display: inline-block;
+    align-items: center;
+    left: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.online-side svg{
+    position: fixed;
+    display: inline-block;
+    left: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }

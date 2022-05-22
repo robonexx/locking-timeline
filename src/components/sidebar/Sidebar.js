@@ -32,12 +32,6 @@ export default function Sidebar() {
                 <span>New timeline</span>
               </NavLink>
             </li>
-            <li>
-              <NavLink to='/mytimeline'>
-                <AiFillPlusSquare className='icon' alt='add project icon' />
-                <span>My Timeline</span>
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </div>

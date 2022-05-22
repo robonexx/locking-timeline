@@ -11,8 +11,7 @@ import { useAuthContext } from './hooks/useAuthContext';
 import Create from './pages/create/Create';
 import Dashboard from './pages/dashboard/Dashboard';
 import Login from './pages/login/Login';
-import MyTimeline from './pages/mytimeline/MyTimeline';
-import Project from './pages/project/Project';
+import Timeline from './pages/timeline/Timeline';
 import Signup from './pages/signup/Signup';
 
 function App() {
@@ -33,13 +32,9 @@ function App() {
                 {!user && <Redirect to='/login' />}
                 {user && <Create />}
               </Route>
-              <Route path='/mytimeline'>
-                {!user && <Redirect to='/mytimeline' />}
-                {user && <MyTimeline />}
-              </Route>
-              <Route path='/projects/:id'>
+              <Route path='/timelines/:id'>
                 {!user && <Redirect to='/login' />}
-                {user && <Project />}
+                {user && <Timeline />}
               </Route>
               <Route path='/login'>
                 {user && <Redirect to='/' />}

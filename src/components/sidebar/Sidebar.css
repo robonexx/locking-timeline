@@ -38,6 +38,7 @@ text-shadow: 1px 1px 1px rgba(0,0,0.335);
     width: 100%;
     color: #fff;
     box-sizing: border-box;
+    cursor: pointer;
   }
   .sidebar .links .icon {
     margin-right: 10px;
@@ -47,6 +48,11 @@ text-shadow: 1px 1px 1px rgba(0,0,0.335);
   .sidebar .links a.active {
     color: white;
     background: var(--bg-color-dark);
+    border-radius: 20px 0 0 20px;
+  }
+  .sidebar .links a:hover {
+    color: #888;
+    background: #fafafa;
     border-radius: 20px 0 0 20px;
   }
   .sidebar .links .active img {

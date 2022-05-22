@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Select from 'react-select';
-import { useCollection } from '../../hooks/useCollection';
+
 import { timestamp } from '../../firebase/config';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import { useFirestore } from '../../hooks/useFirestore';
@@ -24,8 +24,7 @@ const categories = [
 export default function Create() {
   const history = useHistory();
   const { addDocument, response } = useFirestore('timeline');
-  /* const { documents } = useCollection('users');
-  const [users, setUsers] = useState([]); */
+  
   const { user } = useAuthContext();
 
   // form fields
