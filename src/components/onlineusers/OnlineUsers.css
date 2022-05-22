@@ -20,6 +20,10 @@
     transform: translateX(0px);
 }
 
+.online-users:hover > .online-side {
+    opacity: 0;
+}
+
 .online-users h2 {
     text-align: right;
     margin: 60px 0 30px 0;
@@ -69,6 +73,7 @@
     left: 0;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    transition: all 0.3s ease;
 }
 .online-side svg{
     position: fixed;
