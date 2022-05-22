@@ -85,3 +85,10 @@ textarea {
   padding: 8px;
   margin: 10px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .page-title {
+    display: block;
+   text-align: center;
+  }
+}
