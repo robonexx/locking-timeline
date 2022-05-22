@@ -1,4 +1,7 @@
 {
+  "timeline": {
+    "default": "locking-timeline"
+  },
   "projects": {
     "default": "locking-timeline"
   }
